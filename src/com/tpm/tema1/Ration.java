@@ -8,9 +8,9 @@ public class Ration {
         // numberOfTimesIateWithThisSpoon = 0;
     }
 
-    public void eat() {
+    public void eat(int memberNo) {
         // numberOfTimesIateWithThisSpoon++;
-        System.out.println("Tribe member is eating");
+        System.out.println("Tribe member " + memberNo + "  eating");
         try {
             Thread.sleep(40000);
         } catch (InterruptedException e) {

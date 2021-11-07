@@ -14,8 +14,8 @@ public class Main {
         final RationsResourcePool rationsResourcePool = new RationsResourcePool(AvailableRations);
 
         for (int i = 0; i < TribeMembers-1; i++) {
-            executorService.submit(new TribeMember(rationsResourcePool, false));
+            executorService.submit(new TribeMember(rationsResourcePool, false, i));
         }
-        executorService.submit(new TribeMember(rationsResourcePool,true));
+        executorService.submit(new TribeMember(rationsResourcePool,true, 9));
     }
 }
