@@ -34,6 +34,7 @@ public class TribeMember implements Runnable {
                 }
             }
         }
+        return;
     }
 
     private void exit(){
