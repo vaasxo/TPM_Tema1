@@ -18,7 +18,7 @@ public class Ration {
         }
     }
 
-    public void cook(){
+    public void cook() {
         System.out.println("Cook is cooking");
         try {
             Thread.sleep(1);

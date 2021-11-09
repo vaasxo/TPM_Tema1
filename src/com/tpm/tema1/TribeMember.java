@@ -15,18 +15,17 @@ public class TribeMember implements Runnable {
 
     @Override
     public void run() {
-        while(!isDone) {
+        while (!isDone) {
             Ration ration = rationsResourcePool.getRation();
 
-            if(isCook){
+            if (isCook) {
                 System.out.println("Cook is cooking");
                 try {
                     ration.cook();
                 } finally {
                     exit();
                 }
-            }
-            else {
+            } else {
                 try {
                     ration.eat(memberNo);
                 } finally {
@@ -34,10 +33,9 @@ public class TribeMember implements Runnable {
                 }
             }
         }
-        return;
     }
 
-    private void exit(){
+    private void exit() {
         isDone = true;
     }
 }
